@@ -11,7 +11,7 @@ const Table = () => {
     const fetchLeaves = async () => {
         try {
             const response = await axios.get(
-                "https://employee-hub-api.vercel.app/api/leave",
+                "https://employeehub-api.vercel.app/api/leave",
                 {
                 headers: {
                     "Authorization" : `Bearer ${localStorage.getItem("token")}`

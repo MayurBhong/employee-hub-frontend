@@ -11,7 +11,7 @@ const List = () => {
 
     const fetchLeaves = async () => {
         try {
-            const response = await axios.get(`https://employee-hub-api.vercel.app/api/leave/${id}/${user.role}`,{
+            const response = await axios.get(`https://employeehub-api.vercel.app/api/leave/${id}/${user.role}`,{
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`
                 }

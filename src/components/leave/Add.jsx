@@ -21,7 +21,7 @@ const Add = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                `https://employee-hub-api.vercel.app/api/leave/add`,leave,
+                `https://employeehub-api.vercel.app/api/leave/add`,leave,
             {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`

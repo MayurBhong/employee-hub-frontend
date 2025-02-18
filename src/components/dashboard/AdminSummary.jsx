@@ -9,7 +9,7 @@ const AdminSummary = () => {
     useEffect(() => {
         const fitchSummary = async () => {
             try {
-                const summary = await axios.get("https://employee-hub-api.vercel.app/api/dashboard/summary",{
+                const summary = await axios.get("https://employeehub-api.vercel.app/api/dashboard/summary",{
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`
                     }
